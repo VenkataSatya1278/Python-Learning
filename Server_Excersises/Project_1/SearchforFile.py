@@ -1,4 +1,15 @@
+#!/usr/bin/env python
+
 import os,stat,sys,string,commands
+from__future__import absolute_import, division, print_function
+
+
+def get_input(prompt='')
+	try:
+		line = raw_input(prompt)
+	except NameError:
+		line = input(prompt)
+	return line
 
 def filepermission(pattern):
 	try:
